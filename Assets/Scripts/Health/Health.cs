@@ -10,7 +10,6 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
-    private SpriteRenderer spriteRend;
 
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
@@ -24,7 +23,6 @@ public class Health : MonoBehaviour
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        spriteRend = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(float _damage)

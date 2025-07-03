@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    [SerializeField] private AnimatorOverrideController unarmedOverride;
+    [SerializeField] private RuntimeAnimatorController baseController;
     private Animator anim;
-    public AnimatorOverrideController unarmedOverride;
-    public RuntimeAnimatorController baseController;
 
     private void Start()
     {

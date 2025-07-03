@@ -69,12 +69,6 @@ public class PlayerHealthManager : MonoBehaviour
 
             anim = player.GetComponent<Animator>();
             spriteRend = player.GetComponent<SpriteRenderer>();
-
-            //Debug.Log("Reconnected to new player: " + player.name);
-        }
-        else
-        {
-            //Debug.LogWarning("Player not found in scene!");
         }
     }
 
@@ -83,7 +77,6 @@ public class PlayerHealthManager : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
         if (currentHealth > 0)
         {
-            //anim.SetTrigger("hurt"); // Only for enemies
             StartCoroutine(Invulnerability());
             SoundManager.instance.PlaySound(hurtSound);
         }
