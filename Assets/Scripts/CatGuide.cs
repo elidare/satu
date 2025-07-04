@@ -8,6 +8,7 @@ public class CatGuide : MonoBehaviour
     [SerializeField] private TMP_Text messageText; // The text inside it
 
     [SerializeField] private float messageDuration = 5f;
+    [SerializeField] private AudioClip meowSound;
 
     private Coroutine currentMessage;
 
@@ -23,6 +24,7 @@ public class CatGuide : MonoBehaviour
             StopCoroutine(currentMessage);
         }
 
+        SoundManager.instance.PlaySound(meowSound);
         currentMessage = StartCoroutine(ShowMessageCoroutine(message));
     }
 
