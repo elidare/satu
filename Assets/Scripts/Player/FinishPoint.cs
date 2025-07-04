@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishPoint : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class FinishPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Player can not leave Scene 1 without weapon and essay
-            WeaponManager player = collision.GetComponent<WeaponManager>();
-            if (player != null && !player.HasEssay() || !player.HasWeapon())
+            if (SceneManager.GetActiveScene().name == "1_room")
             {
-                return;
+                // Player can not leave Scene 1 without weapon and essay
+                WeaponManager weaponManager = collision.GetComponent<WeaponManager>();
+                if (weaponManager == null || !weaponManager.HasEssay() || !weaponManager.HasWeapon())
+                {
+                    return;
+                }
             }
 
             if (goNextLevel)
