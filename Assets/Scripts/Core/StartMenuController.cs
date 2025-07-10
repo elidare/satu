@@ -5,7 +5,7 @@ public class StartMenuController : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(1); // Load First scene
+        SceneManager.LoadScene("0_intro"); // Load Intro
     }
     public void Quit()
     {
