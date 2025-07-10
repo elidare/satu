@@ -32,9 +32,9 @@ public class UIManager : MonoBehaviour
     }
 
     // Game over functions
-    public void Restart() // TODO: This should either respawn or be deleted
+    public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Restart the current scene
+        SceneManager.LoadScene("1_room"); // Restart the game without intro
     }
 
     public void MainMenu()
