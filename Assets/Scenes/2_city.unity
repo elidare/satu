@@ -2952,7 +2952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3011455470439744038, guid: ab95234215153fb49912e76139a3acba, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4122625564240288660, guid: ab95234215153fb49912e76139a3acba, type: 3}
