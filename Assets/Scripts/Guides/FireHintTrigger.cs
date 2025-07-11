@@ -8,7 +8,7 @@ public class FireHintTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            catGuide.ShowMessage("Avoid traps and delete enemies! To fire, press Left Control! Good luck!");
+            catGuide.ShowMessage("Use Space to jump over the traps! To fire, press Left Control! Good luck!");
         }
     }
 }

@@ -53,6 +53,11 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.name == "2_city") // Dirty hack to make full lives on Restart
+        {
+            dead = false;
+            currentHealth = startingHealth;
+        }
         ReconnectToPlayer();
     }
 
