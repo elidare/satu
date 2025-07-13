@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 92d6fce2393381b4f9157338885f0cda
+guid: d5cbb33337aba3f439d23066242f0882
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5222251918190740728
-    second: enemy_mushroom_hurt_0
+      213: -6854381733536725621
+    second: terrain_desert_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_mushroom_hurt_0
+      name: terrain_desert_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 164
-        height: 200
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f48c5f637a297840800000000000000
-      internalID: 5222251918190740728
+      spriteID: 2671d7e567757094d9568bedfed31bcc
+      internalID: -306825502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_desert_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 164
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9807fe70f9ca21148b62cfbad12f0994
+      internalID: 453262735
       vertices: []
       indices: 
       edges: []
@@ -151,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e8d4e373d5c574a4f9fc4131dc424165
+    spriteID: 52b3a61a343a1be4f9f044f51b4ddbc8
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +183,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy_mushroom_hurt_0: 5222251918190740728
+      terrain_desert_0: -306825502
+      terrain_desert_1: 453262735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

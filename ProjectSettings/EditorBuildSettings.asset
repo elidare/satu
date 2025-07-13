@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3_forest.unity
     guid: 35ef088234d70874c96f0435258ad156
+  - enabled: 1
+    path: Assets/Scenes/4_lake.unity
+    guid: d144235d7ef120c428324217c7eb278a
+  - enabled: 1
+    path: Assets/Scenes/5_desert.unity
+    guid: a17c72fe3ae53224691fa2c9fca79911
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

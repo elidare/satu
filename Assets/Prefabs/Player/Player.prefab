@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89d67f47efbbd645bb4913a38627305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  attackCooldown: 1
   firePoint: {fileID: 2143426370510229354}
   attackBolts:
   - {fileID: 0}
