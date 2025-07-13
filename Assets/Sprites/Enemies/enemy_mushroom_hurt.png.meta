@@ -129,10 +129,10 @@ TextureImporter:
       name: enemy_mushroom_hurt_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 154
-        height: 188
+        width: 164
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e8d4e373d5c574a4f9fc4131dc424165
     internalID: 0
     vertices: []
     indices: 
