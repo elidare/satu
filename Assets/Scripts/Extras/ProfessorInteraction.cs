@@ -21,6 +21,7 @@ public class ProfessorInteraction : MonoBehaviour
     private bool isPlayerInRange = false;
     private bool hasInteracted = false;
     private Coroutine currentMessage;
+    private Transform playerTransform;
 
     private void Start()
     {
@@ -59,6 +60,7 @@ public class ProfessorInteraction : MonoBehaviour
         // Float up with balloons
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
         player.GetComponent<Animator>().SetTrigger("fly");
+        playerTransform = player.GetComponent<Transform>();
 
         if (rb != null)
         {
@@ -66,7 +68,8 @@ public class ProfessorInteraction : MonoBehaviour
             rb.linearVelocity = new Vector2(0, velocity); // upward motion
         }
 
-        // Load Credits // TODO when the player is flying up
+        // Load Credits when the player is flying up
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(GameConstants.Credits);
     }
 

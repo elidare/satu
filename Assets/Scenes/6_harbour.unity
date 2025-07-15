@@ -3365,8 +3365,8 @@ MonoBehaviour:
   balloonObject: {fileID: 955108032}
   professorSound: {fileID: 8300000, guid: bdde435d9f379db47939fddc633d58d9, type: 3}
   messageDuration: 4
-  gravityScale: -0.1
-  velocity: 0.1
+  floatSpeed: 2
+  endYPosition: 5
 --- !u!212 &2102942160
 SpriteRenderer:
   m_ObjectHideFlags: 0
