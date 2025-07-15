@@ -132,10 +132,6 @@ PrefabInstance:
       value: Satu goes to Harbour
       objectReference: {fileID: 0}
     - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
-      propertyPath: m_fontSize
-      value: 63.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
       propertyPath: m_margin.w
       value: -10.027283
       objectReference: {fileID: 0}
@@ -144,8 +140,24 @@ PrefabInstance:
       value: 5.013611
       objectReference: {fileID: 0}
     - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
       propertyPath: m_fontSizeBase
-      value: 63.9
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 843789296984997076, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 978247449092388130, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
       propertyPath: m_SizeDelta.x
@@ -172,16 +184,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2365517071860682287, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2365517071860682287, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2365517071860682287, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
-      propertyPath: m_Color.r
-      value: 0
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3015070344062043582, guid: d5a08a2892f63e54ea79395687886d97, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
