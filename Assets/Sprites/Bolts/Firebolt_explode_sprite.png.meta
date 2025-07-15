@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb6931317384b4a468e60b2f93f1cd99
-      internalID: 1982013747
+      spriteID: 352b45bd504f0604cb0d59aae8ef89cd
+      internalID: -1855634768
       vertices: []
       indices: 
       edges: []
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11b89eeb41e3364e9018850db31f164
-      internalID: -1489265502
+      spriteID: 69ff4443146feb742ac0822c0ca35f05
+      internalID: 1251524605
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7592687f56cf06d4191ea8ea2865f376
-      internalID: -1841899911
+      spriteID: aaa12ce12332333488c91675142cc777
+      internalID: -1071499847
       vertices: []
       indices: 
       edges: []
@@ -204,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f5283232cd9ee6247b05942f1d4675ff
+    spriteID: 2f6408ad1886033469d2be06550a9ab0
     internalID: 0
     vertices: []
     indices: 
@@ -214,9 +214,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Firebolt_explode_sprite_0: 1982013747
-      Firebolt_explode_sprite_1: -1489265502
-      Firebolt_explode_sprite_2: -1841899911
+      Firebolt_explode_sprite_0: -1855634768
+      Firebolt_explode_sprite_1: 1251524605
+      Firebolt_explode_sprite_2: -1071499847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

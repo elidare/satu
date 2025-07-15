@@ -66,8 +66,8 @@ public class ProfessorInteraction : MonoBehaviour
             rb.linearVelocity = new Vector2(0, velocity); // upward motion
         }
 
-        // Load next scene
-        //SceneManager.LoadScene("");
+        // Load Credits
+        SceneManager.LoadScene("7_credits");
     }
 
     private void ShowMessage(string message)
