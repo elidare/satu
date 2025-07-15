@@ -10,6 +10,7 @@ public class ProfessorInteraction : MonoBehaviour
     [SerializeField] private TMP_Text speechText;
     [SerializeField] private GameObject essayObject;
     [SerializeField] private GameObject balloonObject;
+    [SerializeField] private AudioClip professorSound;
 
     [Header("Vars")]
     [SerializeField] private float messageDuration = 5f;
@@ -40,6 +41,9 @@ public class ProfessorInteraction : MonoBehaviour
 
     private IEnumerator HandleInteraction(GameObject player)
     {
+        // Player disable movement
+        player.GetComponent<PlayerMovement>().enabled = false;
+
         essayObject.SetActive(true);
 
         ShowMessage("Excellent! A perfect score! Now you may go home! I'll give you some transport!");
@@ -52,11 +56,10 @@ public class ProfessorInteraction : MonoBehaviour
         // Show balloons and fly away
         balloonObject.SetActive(true);
 
-        // Player disable movement
-        player.GetComponent<PlayerMovement>().enabled = false;
-
         // Float up with balloons
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+        player.GetComponent<Animator>().SetTrigger("fly");
+
         if (rb != null)
         {
             rb.gravityScale = gravityScale; // float up
@@ -64,7 +67,7 @@ public class ProfessorInteraction : MonoBehaviour
         }
 
         // Load next scene
-        //SceneManager.LoadScene(nextSceneName);
+        //SceneManager.LoadScene("");
     }
 
     private void ShowMessage(string message)
@@ -74,7 +77,7 @@ public class ProfessorInteraction : MonoBehaviour
             StopCoroutine(currentMessage);
         }
 
-        //SoundManager.instance.PlaySound(); // TODO
+        SoundManager.instance.PlaySound(professorSound);
         currentMessage = StartCoroutine(ShowMessageCoroutine(message));
     }
 

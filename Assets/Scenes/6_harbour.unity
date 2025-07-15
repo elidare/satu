@@ -897,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7902530051186712690, guid: 5e15ff25c56041d48970052417ab8df9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: -0.055
       objectReference: {fileID: 0}
     - target: {fileID: 7902530051186712690, guid: 5e15ff25c56041d48970052417ab8df9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3363,6 +3363,7 @@ MonoBehaviour:
   speechText: {fileID: 217665476}
   essayObject: {fileID: 816428344}
   balloonObject: {fileID: 955108032}
+  professorSound: {fileID: 8300000, guid: bdde435d9f379db47939fddc633d58d9, type: 3}
   messageDuration: 4
   gravityScale: -0.1
   velocity: 0.1
@@ -3817,7 +3818,7 @@ PrefabInstance:
     - target: {fileID: 441612281367558226, guid: 3a8ca5eb646e9cc4cac98cb78bcb6f39, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1209777994, guid: 4681b2a283811cd47aba5cadea8d7302, type: 3}
+      objectReference: {fileID: 1209777994, guid: 1f2be96cdf2527b4ea9cb347bf2c3698, type: 3}
     - target: {fileID: 671461892640821561, guid: 3a8ca5eb646e9cc4cac98cb78bcb6f39, type: 3}
       propertyPath: jumpPower
       value: 8
