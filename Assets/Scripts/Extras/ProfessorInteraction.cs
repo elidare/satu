@@ -43,6 +43,7 @@ public class ProfessorInteraction : MonoBehaviour
     private IEnumerator HandleInteraction(GameObject player)
     {
         // Player disable movement
+        player.GetComponent<Animator>().SetBool("go", false);
         player.GetComponent<PlayerMovement>().enabled = false;
 
         essayObject.SetActive(true);
@@ -69,7 +70,7 @@ public class ProfessorInteraction : MonoBehaviour
         }
 
         // Load Credits when the player is flying up
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(GameConstants.Credits);
     }
 
