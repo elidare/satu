@@ -31,7 +31,6 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt"); // For enemies
-            //StartCoroutine(Invulnerability()); // Only for Player
             SoundManager.instance.PlaySound(hurtSound);
         }
         else

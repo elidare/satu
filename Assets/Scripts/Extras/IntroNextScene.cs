@@ -5,6 +5,6 @@ public class IntroNextScene : MonoBehaviour
 {
     private void OnEnable()
     {
-        SceneManager.LoadScene("1_room", LoadSceneMode.Single);
+        SceneManager.LoadScene(GameConstants.LevelRoom, LoadSceneMode.Single);
     }
 }

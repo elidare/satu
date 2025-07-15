@@ -15,7 +15,7 @@ public class Essay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = true;
         }
@@ -23,7 +23,7 @@ public class Essay : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = false;
         }
@@ -35,7 +35,7 @@ public class Essay : MonoBehaviour
         gameObject.SetActive(false);
 
         // Make Player.hasEssay
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindWithTag(GameConstants.PlayerTag);
         if (player != null)
         {
             WeaponManager weaponManager = player.GetComponent<WeaponManager>();

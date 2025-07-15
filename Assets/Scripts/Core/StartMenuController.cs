@@ -5,12 +5,12 @@ public class StartMenuController : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("0_intro"); // Load Intro
+        SceneManager.LoadScene(GameConstants.Intro); // Load Intro
     }
 
     public void ShowCredits()
     {
-        SceneManager.LoadScene("7_credits"); // Load Credits
+        SceneManager.LoadScene(GameConstants.Credits); // Load Credits
     }
 
     public void Quit()

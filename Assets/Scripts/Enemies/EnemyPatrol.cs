@@ -26,7 +26,6 @@ public class EnemyPatrol : MonoBehaviour
     private void OnDisable()
     {
         anim.SetBool("moving", false);
-        // die ??
     }
 
     private void Update()

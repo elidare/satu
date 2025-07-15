@@ -6,7 +6,7 @@ public class FireHintTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             catGuide.ShowMessage("Use Space to jump over the traps! To fire, press Left Control! Good luck!");
         }

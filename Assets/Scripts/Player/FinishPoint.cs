@@ -8,9 +8,9 @@ public class FinishPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
-            if (SceneManager.GetActiveScene().name == "1_room")
+            if (SceneManager.GetActiveScene().name == GameConstants.LevelRoom)
             {
                 // Player can not leave Scene 1 without weapon and essay
                 WeaponManager weaponManager = collision.GetComponent<WeaponManager>();

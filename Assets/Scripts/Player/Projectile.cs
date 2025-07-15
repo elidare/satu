@@ -36,7 +36,7 @@ public class Projectile : MonoBehaviour
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag(GameConstants.EnemyTag))
         {
             collision.GetComponent<Health>().TakeDamage(1);
         }

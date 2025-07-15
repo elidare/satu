@@ -22,7 +22,7 @@ public class Credits : MonoBehaviour
         // Triggers on Credits game object
         if (endYPosition != 0 && rectTransform.anchoredPosition.y >= endYPosition)
         {
-            SceneManager.LoadScene("0_menu");
+            SceneManager.LoadScene(GameConstants.MainMenu);
         }
     }
 }

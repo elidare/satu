@@ -6,7 +6,7 @@ public class EssayHintTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             catGuide.ShowMessage("Did you take your essay? It is on the table.");
         }

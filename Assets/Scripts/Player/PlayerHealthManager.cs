@@ -53,7 +53,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "2_city") // Dirty hack to make full lives on Restart
+        if (scene.name == GameConstants.LevelCity) // Dirty hack to make full lives on Restart
         {
             dead = false;
             currentHealth = startingHealth;
@@ -63,7 +63,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void ReconnectToPlayer()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindWithTag(GameConstants.PlayerTag);
         if (player != null)
         {
             components = new Behaviour[]
@@ -94,7 +94,7 @@ public class PlayerHealthManager : MonoBehaviour
                 {
                     component.enabled = false;
                 }
-                if (CompareTag("Player"))
+                if (CompareTag(GameConstants.PlayerTag))
                 {
                     anim.SetBool("grounded", true); // only on Player
                 }

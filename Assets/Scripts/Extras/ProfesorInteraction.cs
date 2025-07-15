@@ -33,7 +33,7 @@ public class ProfessorInteraction : MonoBehaviour
     {
         if (isPlayerInRange && !hasInteracted && Input.GetKeyDown(KeyCode.Return))
         {
-            GameObject player = GameObject.FindWithTag("Player");
+            GameObject player = GameObject.FindWithTag(GameConstants.PlayerTag);
             hasInteracted = true;
             StartCoroutine(HandleInteraction(player));
         }
@@ -66,8 +66,8 @@ public class ProfessorInteraction : MonoBehaviour
             rb.linearVelocity = new Vector2(0, velocity); // upward motion
         }
 
-        // Load Credits
-        SceneManager.LoadScene("7_credits");
+        // Load Credits // TODO when the player is flying up
+        SceneManager.LoadScene(GameConstants.Credits);
     }
 
     private void ShowMessage(string message)
@@ -93,7 +93,7 @@ public class ProfessorInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = true;
             ShowMessage("Hello! You brought your essay? Let me see!");
@@ -102,7 +102,7 @@ public class ProfessorInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = false;
         }

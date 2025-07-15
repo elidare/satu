@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = true;
         }
@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             isPlayerInRange = false;
         }
@@ -34,8 +34,7 @@ public class Weapon : MonoBehaviour
         // Deactivate the weapon in the closet
         gameObject.SetActive(false);
         // Call EquipPlayer
-        // Find the player GameObject (must be tagged "Player")
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindWithTag(GameConstants.PlayerTag);
 
         if (player != null)
         {

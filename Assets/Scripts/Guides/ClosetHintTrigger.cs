@@ -6,7 +6,7 @@ public class ClosetHintTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(GameConstants.PlayerTag))
         {
             catGuide.ShowMessage("Come up to the closet and open it using Enter. After this you will need to pick up the weapon!");
         }

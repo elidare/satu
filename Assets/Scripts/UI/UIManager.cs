@@ -34,12 +34,12 @@ public class UIManager : MonoBehaviour
     // Game over functions
     public void Restart()
     {
-        SceneManager.LoadScene("1_room"); // Restart the game without intro
+        SceneManager.LoadScene(GameConstants.LevelRoom); // Restart the game without intro
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0); // Menu
+        SceneManager.LoadScene(GameConstants.MainMenu); // Menu
     }
 
     public void Quit()
