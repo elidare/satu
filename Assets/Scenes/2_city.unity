@@ -1786,6 +1786,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 3608830550755424581, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608830550755424581, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608830550755424581, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 4656280257790161714, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
@@ -1835,8 +1847,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6840210500872296221, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.8621
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840210500872296221, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.9248
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840210500872296221, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840210500872296221, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10.1159
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840210500872296221, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.0375
       objectReference: {fileID: 0}
     - target: {fileID: 8982713198292247829, guid: c4c8d40a530644b488f48e3e7e1b578f, type: 3}
       propertyPath: m_Name
@@ -7850,6 +7878,10 @@ PrefabInstance:
     - target: {fileID: 248477007555747907, guid: aee88172ac7f1a4449c2fdff12c8259c, type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 248477007555747907, guid: aee88172ac7f1a4449c2fdff12c8259c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1534013952501310270, guid: aee88172ac7f1a4449c2fdff12c8259c, type: 3}
       propertyPath: m_Pivot.x
