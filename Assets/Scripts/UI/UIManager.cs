@@ -10,16 +10,26 @@ public class UIManager : MonoBehaviour
     [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
 
+    [Header("Map")]
+    [SerializeField] private GameObject map;
+    // Map points?
+
     private void Awake()
     {
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        map.SetActive(false);
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame(!pauseScreen.activeInHierarchy); // Pause if not paused and vice versa
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ShowMap(!map.activeInHierarchy); // Map if not showed and vice versa
         }
     }
 
@@ -59,6 +69,13 @@ public class UIManager : MonoBehaviour
         pauseScreen.SetActive(status);
 
         Time.timeScale = status ? 0 : 1; // If Paused, stop the game
+    }
+    #endregion
+    
+    #region Map
+    public void ShowMap(bool status)
+    {
+        map.SetActive(status);
     }
     #endregion
 }
